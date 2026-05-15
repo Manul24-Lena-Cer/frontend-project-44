@@ -22,7 +22,10 @@
     "url": "https://github.com/Manul24-Lena-Cer/frontend-project-44/issues"
   },
   "homepage": "https://github.com/Manul24-Lena-Cer/frontend-project-44#readme",
- "bin": {
+  "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
