@@ -3,7 +3,7 @@ name: SonarCloud Analysis
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
     types: [ opened, synchronize, reopened ]
 
@@ -23,6 +23,9 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+
+      - name: Install Node.js dependencies
+        run: npm install
 
       - name: SonarQube Scan
         uses: SonarSource/sonarcloud-github-action@v1
