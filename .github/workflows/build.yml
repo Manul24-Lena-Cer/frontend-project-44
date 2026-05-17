@@ -1,6 +1,5 @@
 name: SonarCloud Analysis
 
-
 on:
   push:
     branches: [ main ]
@@ -16,9 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Отключаем shallow clone для лучшего анализа
+          fetch-depth: 0
 
-      - name: Set up Java (required for SonarScanner)
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
           java-version: '11'
