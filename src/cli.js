@@ -8,3 +8,4 @@ function greetUser() {
 }
 
 export default greetUser; 
+// Временный комментарий для запуска CI: 2024-05-20
